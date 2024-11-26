@@ -36,7 +36,7 @@
 // require('dotenv').config({path:'./env'});
 
 import dotenv from "dotenv";
-
+import {app} from './app.js'
 import connectDb from './db/index.js';
 
 dotenv.config({path:'./env'});

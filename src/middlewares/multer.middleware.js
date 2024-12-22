@@ -47,9 +47,10 @@ import multer from "multer";
 //   { name: 'resume', maxCount: 1 },
 // ]);
 
+
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, './assets/temp');
+    cb(null, './src/assets/temp');
   },
   filename: function (req, file, cb) {
     cb(null, `${Date.now()}-${file.originalname}`);
